@@ -1,6 +1,6 @@
-const awesomeFunc = (req, res, next) => {
-    res.json("Awesome Person");
+const person = (req, res, next) => {
+    res.json("Heather Christensen");
 };
 
 
-module.exports = {awesomeFunc};
+module.exports = {person};
