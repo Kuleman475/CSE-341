@@ -1,6 +1,6 @@
 //Local host webpage
 ###
-GET http://localhost:8080/contacts HTTP/1.1
+GET http://localhost:8080/contacts/create HTTP/1.1
 
 ###
 GET http://localhost:8080/contacts/663590cd6f6b598b6dc02239 HTTP/1.1
@@ -10,6 +10,7 @@ GET http://localhost:8080/contacts/663590f46f6b598b6dc0223a HTTP/1.1
 
 ###
 GET http://localhost:8080/contacts/663591196f6b598b6dc0223b HTTP/1.1
+
 
 
 
