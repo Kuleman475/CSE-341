@@ -8,4 +8,6 @@ routes.get('/:id', contactsController.getSingleData);
 
 routes.post('/create', contactsController.postData);
 
+routes.put('/update/:id', contactsController.updateData);
+
 module.exports = routes;

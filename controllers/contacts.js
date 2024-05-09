@@ -39,4 +39,31 @@ const postData = async (req, res, next) => {
   }
 };
 
-module.exports = { getSingleData, getAllData, postData };
+const updateData = async (req, res, next) => {
+
+  const userId = new ObjectId(req.params.id);
+
+  const updateContact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
+
+  const contact = await mongodb
+    .getDb()
+    .db('Contacts')
+    .collection('contacts')
+    .replaceOne({ _id: userId}, updateContact);
+
+
+
+  if (contact.acknowledged) {
+    res.status(204).json(contact);
+  } else {
+    res.status(500).json(contact.error || 'Some error occurred while updating the contact.');
+  }
+};
+
+module.exports = { getSingleData, getAllData, postData, updateData };
