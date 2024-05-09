@@ -10,7 +10,7 @@ Content-Type: application/json
     "firstName": "Bruce",
     "lastName": "Banner",
     "email": "hulksmash@test.com",
-    "favoriteColor": "Purple",
+    "favoriteColor": "blue",
     "birthday": "04/5/1980"
 }
 
@@ -26,7 +26,13 @@ Content-Type: application/json
   "email": "amazingwoman@test.com",
   "favoriteColor": "teal",
   "birthday": "2/3/91"
-  }
+}
+
+### delete contact
+DELETE http://localhost:8080/contacts/delete/663c1e0f3f3c3f2cef2407ae HTTP/1.1
+
+
+
 ###
 GET http://localhost:8080/contacts/663590f46f6b598b6dc0223a HTTP/1.1
 
