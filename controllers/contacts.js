@@ -64,20 +64,19 @@ const updateData = async (req, res, next) => {
 };
 
 const deleteData = async (req, res, next) => {
-    const userId = new ObjectId(req.params.id);
+  const userId = new ObjectId(req.params.id);
 
-    const contact =  await mongodb
+  const contact = await mongodb
     .getDb()
     .db('Contacts')
     .collection('contacts')
     .deleteOne({ _id: userId });
 
-    if (contact.acknowledged) {
-        res.status(208).json(contact);
-      } else {
-        res.status(500).json(contact.error || 'Some error occurred while deleting the contact.');
-      }
-
+  if (contact.acknowledged) {
+    res.status(208).json(contact);
+  } else {
+    res.status(500).json(contact.error || 'Some error occurred while deleting the contact.');
+  }
 };
 
 module.exports = { getSingleData, getAllData, postData, updateData, deleteData };
