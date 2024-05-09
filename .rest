@@ -1,6 +1,18 @@
 //Local host webpage
 ###
-GET http://localhost:8080/contacts/create HTTP/1.1
+GET http://localhost:8080/contacts HTTP/1.1
+
+### Post contact
+POST http://localhost:8080/contacts/create HTTP/1.1
+Content-Type: application/json  
+
+{
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "email": "hulksmash@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "04/5/1980"
+}
 
 ###
 GET http://localhost:8080/contacts/663590cd6f6b598b6dc02239 HTTP/1.1
