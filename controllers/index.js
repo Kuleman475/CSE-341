@@ -1,6 +1,5 @@
 const person = (req, res, next) => {
-    res.json("Heather Christensen");
+  res.json('Heather Christensen');
 };
 
-
-module.exports = {person};
+module.exports = { person };
