@@ -10,7 +10,7 @@ Content-Type: application/json
     "firstName": "Bruce",
     "lastName": "Banner",
     "email": "hulksmash@test.com",
-    "favoriteColor": "Green",
+    "favoriteColor": "Purple",
     "birthday": "04/5/1980"
 }
 
