@@ -21,7 +21,7 @@
         }
       }
     },
-    "/": {
+    "/contacts": {
       "get": {
         "description": "",
         "produces": [

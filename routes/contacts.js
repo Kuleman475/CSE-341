@@ -10,7 +10,6 @@ routes.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 routes.get('/', contactsController.getAllData);
 
-
 routes.get('/:id', contactsController.getSingleData);
 
 routes.post('/create', contactsController.postData);
