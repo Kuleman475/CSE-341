@@ -8,7 +8,7 @@
   "host": "cse-341-week-4.onrender.com/contacts",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
