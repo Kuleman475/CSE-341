@@ -1,63 +1,8 @@
 //Local host webpage
 
-
-### Create contact
-POST http://localhost:8080/contacts/create HTTP/1.1
-Content-Type: application/json  
-
-{
-    "firstName": "Bruce",
-    "lastName": "Banner",
-    "email": "hulksmash@test.com",
-    "favoriteColor": "Purple",
-    "birthday": "04/5/1980"
-}
-
-### Read all contacts
-GET http://localhost:8080/contacts HTTP/1.1
-
-### Update contact
-PUT http://localhost:8080/contacts/update/663590cd6f6b598b6dc02239 HTTP/1.1
-Content-Type: application/json
-
-{  "firstName": "Heather",
-  "lastName": "Christensen",
-  "email": "amazingwoman@test.com",
-  "favoriteColor": "red",
-  "birthday": "2/3/91"
-}
-
-### Delete contact
-DELETE http://localhost:8080/contacts/delete/663c259ef9febc61d4bd1791 HTTP/1.1
+GET http://localhost:8080/contacts/api-docs
 
 
 // Render.com Webpages
 
-### Create contact
-POST https://cse-341-week-3.onrender.com/contacts/create HTTP/1.1
-Content-Type: application/json  
-
-{
-    "firstName": "Bruce",
-    "lastName": "Banner",
-    "email": "hulksmash@test.com",
-    "favoriteColor": "Purple",
-    "birthday": "04/5/1980"
-}
-
-### Read all contacts
-GET https://cse-341-week-3.onrender.com/contacts HTTP/1.1
-
-### Update contact
-PUT https://cse-341-week-3.onrender.com/contacts/update/663590cd6f6b598b6dc02239 HTTP/1.1
-Content-Type: application/json
-
-{  "firstName": "Heather",
-  "lastName": "Christensen",
-  "email": "amazingwoman@test.com",
-  "favoriteColor": "teal",
-  "birthday": "2/3/91"
-}
-
-### Delete contact
-DELETE https://cse-341-week-3.onrender.com/contacts/delete/663eb84e550794fa0b09eeba HTTP/1.1
+GET https://cse-341-week-4.onrender.com/contacts/api-docs
